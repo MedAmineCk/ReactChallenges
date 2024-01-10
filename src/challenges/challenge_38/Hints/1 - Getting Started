@@ -1,0 +1,55 @@
+This is a challenge where it really might help to write things out in pseudocode before diving into the actual code. It may also help to write your code out in a verbose way before trying to write it concisely. Remember that you can always refactor later! 
+
+Here are some questions to answer to get you started with this: 
+
+        1. Under what circumstances should you add 1 to Pookachu's xPosition? 
+        2. Under what circumstances should you subtract 1 from his xPosition? 
+        3. Repeat the same questions for his yPosition. 
+        4. Answer the questions in pseudocode/normal language first. Then start translating them 
+           into code. 
+
+Alternatively, or in addition to that, it may help to write out a list of "ingredients" you need to make the function work. What does it need to "know" to do its job? What pieces of information does it rely on? Where can you obtain that information if it's already directly available? And how can you derive it if it's not directly available? 
+
+For an example, scroll down to line 50 (spoiler alert). 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+One piece of information you need to know is the direction Pookachu is facing. This piece of information is directly available via the pookachu.direction property. 
+
+Other pieces of information you need to know include the axis of the boundary that you need to check, whether it's the max or min value of that axis that you need to check, whether it's Pookachu's xPosition or yPosition you need to update (if he's allowed to move in the direction he's wanting to move), and whether you should be adding 1 or subtracting 1 from that position. 
+
+None of these pieces of information are directly available, but they can all be derived from the pookachu.direction property! For example, if his direction is "right" (he's facing the right), then it's the max value of the x axis that we want to check, and if he's allowed to move in that direction, then we want to add 1 to his xPosition. 
+

@@ -1,0 +1,58 @@
+To update the time, there's a certain background process you need to initiate. If the counter goes over 1, it means that the background process is continuing after you close the app. Then, when you reopen it, another instance of the background process gets initiated, and so forth and so on, leading to more and more instances of it every time you close and re-open the app. 
+
+You need to write a certain line of code in order to "turn off" or "cancel" or "delete" (so to speak) the background process when the app gets closed. 
+
+I'm being purposefully vague and not using the precise word for what you need to do here to avoid further spoilers. If you have no idea what I mean, scroll down to line 50! 
+
+
+
+    🚨 🚨 🚨 Spoiler Alert! 🚨 🚨 🚨 
+
+    Scroll down to line 50 for some more hints! 
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+If you're using the setInterval or setTimeout method to update the time, you need to do three things to prevent the counter from going over 1:
+
+    1. Use the method inside React.useEffect(). 
+    
+    2. Set up the dependency array of the useEffect correctly.
+    
+    3. Clean up the interval or timeout inside useEffect. 
+
+See the React documentation for more info: https://beta.reactjs.org/learn/synchronizing-with-effects#how-to-write-an-effect

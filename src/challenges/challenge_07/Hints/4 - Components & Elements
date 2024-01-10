@@ -1,0 +1,16 @@
+Here's an example:
+
+    function Example(){
+        return (
+            <div>
+                <p>Welcome to this hint!</p>
+                <AnotherExample />
+            </div>
+        )
+    }
+
+In the code above, Example is a functional React component (also known as a React function component). If we wanted to use it somewhere, we would write it as <Example />, using JSX. 
+    
+The <div> and the <p> are elements. Elements are the building blocks of components. 
+    
+Components can also be made out of other components. <AnotherExample /> is an example of this. It's a component living inside another component (namely, <Example />). 

@@ -1,0 +1,1 @@
+Although it says the word "subscribe," the subscribe button is really just a submit button, and what you're trying to do is submit the form when the user clicks the button. To handle a submit event, you need an onSubmit event handler, and this goes inside the form tag itself, rather than the button! 

@@ -1,0 +1,9 @@
+To update the time, you need to execute some code (see previous hints) repeatedly at certain intervals of time. In other words, this is a perfect job for setInterval (although you could also do it with setTimeout — either approach is acceptable, although setInterval would probably be more optimal). 
+
+However, to get setInterval or setTimeout to work properly in React, you need to use it inside React.useEffect(). 
+
+See the React documentation for more information: 
+
+    https://reactjs.org/docs/hooks-effect.html
+    
+    https://beta.reactjs.org/learn/synchronizing-with-effects#how-to-write-an-effect

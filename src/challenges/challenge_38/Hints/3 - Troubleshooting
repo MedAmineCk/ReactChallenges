@@ -1,0 +1,3 @@
+Is Pookachu's position not updating even though it seems it should be getting updating? Or is he exceeding his boundaries even though you're checking whether he's exceeding them and it seems like he shouldn't be able to? 
+
+If so, here's another question for you: Are you using values directly derived from the pookachu state, directly inside the updateFunction position? If so, you might have better luck if you try using the previous state values that you can pass inside the setPookachu function (e.g., setPookachu(prev => prev.yourValueHere)). 

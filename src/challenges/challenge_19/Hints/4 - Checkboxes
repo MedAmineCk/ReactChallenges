@@ -1,0 +1,3 @@
+The text for the to-do list items (the paragraphs with the class name of "to-do-list-item-text") is getting crossed out when the user clicks the "AutoComplete" button, so something must be working right for that aspect of the code — and whatever it is, the checkboxes must be missing it. 
+
+What is it? What does the text have that the checkboxes lack? How can you do something similar for the checkboxes that is already being done for the text?

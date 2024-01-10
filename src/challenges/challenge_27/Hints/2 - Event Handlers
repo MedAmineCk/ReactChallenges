@@ -1,0 +1,9 @@
+There are four event handlers missing:
+    - One for when the cursor enters the "Hold Down" button. 
+    - One for when the cursor leaves the "Hold Down" button. 
+    - One for when the user's mouse button goes down inside the "Hold Down" button. 
+    - One for when the user's mouse button goes up inside the "Hold Down" button. 
+    
+Each event handler, in turn, needs to set one of the missing states in a certain way. 
+ 
+If you don't know how to listen for these events, you just need to do a little Googling!

@@ -1,0 +1,110 @@
+Big spoilers ahead! Scroll down to line 50 if you *really* need some help!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+You need to be keeping track of a few different things here: 
+
+    - Is the card currently open or closed? 
+    
+	    - If it’s open, then you just need to listen for the mouse button going down in the “cover” 
+          div and remove the “open” class when that event happens. 
+          
+	    - If it’s closed, then you also need to listen for the mouse button going down in the 
+          “cover” div, as well as the following: 
+          
+		    - What was the position of the cursor when the button first went down? 
+            
+		    - Is the mouse button still down and is the cursor moving? 
+            
+		    - If so, what is the current position and is it 50 pixels to the left of the initial 
+              position? 	
+              
+            - If so, apply the “open” class to the “cover” div. 
+            
+		    - Otherwise keep listening and tracking changes until the 50-pixel threshold is reached 
+              or or until the user lifts up their mouse button (if they lift it up before they’ve reached the threshold). 
+              
+    Give yourself time to think through how to do these things and do some Googling if you need to. If you're still stuck, scroll down to line 100 for more hints (spoiler alert). 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    There are three event listeners you will need to use: onMouseDown, onMouseUp, onMouseMove. Each one will need an event handler that updates your state in a certain way. 
+    
+    You will also need to create a state to keep track of the information you need to keep track of. There are probably multiple ways of doing this effectively, but the one I used was a single object with three properties, answering three questions: 
+            
+            1. Is the mouse button down? 
+            
+            2. Is the card currently open? 
+            
+            3. What was the position of the cursor on the x-axis when the user first pressed down  
+               their mouse button? 
+          

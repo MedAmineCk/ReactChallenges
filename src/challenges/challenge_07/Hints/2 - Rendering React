@@ -1,0 +1,3 @@
+To render anything to the page with React, you'll need to use ReactDOM.createRoot() and .render(). These, in turn, require a "root" DOM node. 
+
+See the React docs for more info: https://beta.reactjs.org/reference/react-dom/client/createRoot

@@ -1,0 +1,61 @@
+There are three possible states the app should be able to have: the weather data for (1) Monday, (2)Tuesday, and (3) Wednesday — the three objects in the weatherData array. 
+
+The initial state should be the first object. When the user presses the "Test" button, the app should change the state to the next day/object. 
+
+If it's in the final state, it should return to the first state, and then repeat the cycle. 
+
+
+
+🚨 Still stuck? SPOILER ALERT! 🚨
+
+⬇️ Scroll down to line 50 to reveal another hint ⬇️  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Since arrays are 0 indexed, you basically just need to set state as weatherData[0], weatherData[1], or weatherData[3]. 
+
+When the user clicks on the button, the index number should go from: 
+
+            0 -> 1
+            1 -> 2
+            2 -> 3
+            3 -> 0
+            etc. 
+            
+Since the ID number of each object corresponds to its index number in the array, you can use the ID number to determine the index number, and then just use some conditional logic to determine what the next number should be, following the pattern above. 
+

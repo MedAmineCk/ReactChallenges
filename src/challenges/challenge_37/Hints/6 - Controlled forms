@@ -1,0 +1,54 @@
+With a controlled form (a form that consists of controlled components), the values of the form are controlled by the relevant React state, rather than being independent of that state. As a result, there is only one "source of truth," rather than two sources (the form and the state). 
+
+For more info on this, see the React docs: https://reactjs.org/docs/forms.html 
+       
+    Note: the conceptual overview near the top of the page is helpful, but the examples are geared toward older versions of React. For examples and info geared toward the current version of React, click the links in the box at the top of the page that says "Try the new React documentation." 
+
+🚨 Spoiler alert! Want more hints? ️️⬇️ Scroll down to line 50 🚨
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Let's say you set up your state as the form's data, gave it the name of formData, and it looked like this at a given point: 
+
+      {userName: "something, commentText: "somethingElse", isAnonymous: false}
+
+In that case, you'd want the value of the username form element to equal formData.userName, and you'd want to do similar things for the other two form elements (with one notable difference for the checkbox).  

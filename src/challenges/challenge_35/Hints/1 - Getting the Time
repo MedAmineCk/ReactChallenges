@@ -1,0 +1,10 @@
+A function for getting the time has already been written for you: getTime. It returns a value with all the data the app needs to display the time. 
+
+Once this value is set as state (as it already is at initialization), the rest of the code takes care of parsing the value into the data displayed on the clock, so you don't need to do anything further in this regard. 
+
+The problem is simply that this process is only happening once (at initialization), rather than repeatedly, so the time is not getting updated. 
+
+
+
+
+

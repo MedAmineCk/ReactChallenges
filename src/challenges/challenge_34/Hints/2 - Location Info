@@ -1,0 +1,58 @@
+You will need to use an API to get the location information. 
+
+I would suggest Googling this, finding an API on your own, and reading the documentation to figure out how to do it, as this is what you would be doing in the real-world as a developer. I did it myself when creating this challenge, and it only took a couple of minutes! However, if you want further hints on how to do this, scroll down to line 50 below. 
+
+
+
+
+
+🚨 Spoiler alert! Want more hints? ️️⬇️ Scroll down to line 50 🚨
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+I used the API at https://ipapi.co/. 
+
+You can get the information you need from this API by simply fetching data from https://ipapi.co/json/
+
+This returns an object of data that then needs to be integrated into the browser object in the userData state. 
+
+Since we need that data before we set the state, my logic basically went as follows: fetch data -> parse data -> set the userData state with the parsed data (and the other values specified in the instructions). 
+
+If you're using a different API out of choice or necessity (perhaps the one I used isn't working or even maintained anymore), you will need to make adjustments accordingly, but the procedure will be more or less analogous.  

@@ -1,0 +1,5 @@
+There are at least two ways of approaching this task: 
+
+    1. Updating the CSS variables via an inline style object inside the image. 
+    
+    2. Directly updating the CSS variables via the vanilla JavaScript setProperty method. 

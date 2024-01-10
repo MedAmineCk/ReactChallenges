@@ -1,0 +1,180 @@
+.challenge_34 {
+  margin: 0;
+  background: #82A6B1;
+
+  &>div:first-of-type {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  header {
+    background: #3A4858;
+    padding: 20px;
+  }
+
+  header div {
+    font-size: 60px;
+    text-align: center;
+  }
+
+  header div::before {
+    position: absolute;
+    content: "❌";
+    color: red;
+    opacity: .4
+  }
+
+  h1 {
+    color: #82A6B1;
+    text-align: center;
+    margin: 0;
+    font-size: 25px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 20px;
+  }
+
+  main p {
+    text-align: center;
+    margin: 0;
+    color: #3A4858;
+    font-weight: 700
+  }
+
+  p::selection {
+    background: black;
+    color: white
+  }
+
+  main p:nth-of-type(1) {
+    text-shadow: 1px 1px 1px black;
+    filter: hue-rotate(150deg);
+    font-size: 40px;
+    margin-bottom: 5px;
+  }
+
+  .download-button {
+    display: block;
+    position: relative;
+    margin: auto;
+    padding: 10px 25px;
+    background-color: #81E979;
+    box-shadow: 1px 2px 2px 2px black;
+    color: #3A4858;
+    font-weight: 700;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 0.9em;
+    text-align: center;
+    text-indent: 15px;
+    border: none;
+    border-radius: 10px;
+  }
+
+  .download-button:hover {
+    background-color: #81D38C;
+    cursor: pointer;
+  }
+
+  .download-button:active {
+    box-shadow: 0px 1px 1px 1px black;
+  }
+
+  .download-button:before, .download-button:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: 52%;
+  }
+
+  .download-button:before {
+    width: 10px;
+    height: 2px;
+    border-style: solid;
+    border-width: 0 2px 2px;
+  }
+
+  .download-button:after {
+    width: 0;
+    height: 0;
+    margin-left: 3px;
+    margin-top: -7px;
+    border-style: solid;
+    border-width: 4px 4px 0 4px;
+    border-color: transparent;
+    border-top-color: inherit;
+    animation: download-arrow 1s linear infinite;
+    animation-play-state: paused;
+  }
+
+  .download-button:hover:before {
+    border-color: black;
+  }
+
+  .download-button:hover:after {
+    border-top-color: black;
+    animation-play-state: running;
+  }
+
+  .download-button:disabled {
+    opacity: .4
+  }
+
+  .download-button:hover:disabled {
+    cursor: not-allowed
+  }
+
+  .download-button:active:disabled {
+    box-shadow: 1px 2px 2px 2px black;
+    transform: scale(1)
+  }
+
+  .download-button:hover:disabled:after {
+    animation-play-state: paused
+  }
+
+  .download-button:focus:not(:focus-visible) {
+    outline: 0;
+  }
+
+  footer {
+    background: #3A4858;
+    display: flex;
+    justify-content: center;
+  }
+
+  footer p {
+    font-size: 10px;
+    color: #82A6B1;
+    padding: 20px;
+    max-width: 380px;
+  }
+
+  @keyframes download-arrow {
+    0% {
+      margin-top: -7px;
+      opacity: 1;
+    }
+    0.001% {
+      margin-top: -15px;
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      margin-top: 0;
+      opacity: 0;
+    }
+  }
+
+}

@@ -1,0 +1,13 @@
+If you don't know where to begin, try starting off with a simpler version of the app, and just focus on the timer at first. Begin with a rudimentary version of the timer and then make it incrementally more sophisticated:
+    
+    1. Make the timer just count down seconds when the app loads. Don't worry about the start 
+       button initiating it or about it stopping at 0. Let it tick down automatically and go into negative numbers.
+       
+    2. Make it only start to tick down if the button is pressed.
+    
+    3. Make it stop at 0.
+    
+    4. Make it reset the timer and score if it's pressed again. 
+    
+    5. Move on to the other tasks, which should more easily fall into place once these main tasks 
+       are completed.

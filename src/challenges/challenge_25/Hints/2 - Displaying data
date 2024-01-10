@@ -1,0 +1,1 @@
+This will require inserting some JS variables into the existing JSX, so that the JSX will render data from the array instead of being hardcoded. This will entail some special syntax. 

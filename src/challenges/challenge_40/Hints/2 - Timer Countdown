@@ -1,0 +1,178 @@
+In JavaScript, there are two ways of timing the execution of code: setInterval and setTimeout. There are multiple ways to complete this challenge with either option. setInterval is arguably better suited for the task, but free to use whichever one you want.
+
+Keep in mind that neither of them will work "right out of the box" and do what you want them to do if you try to use them the same way you'd use them in vanilla JS. You're going to have to make some adjustments to make them work correctly with React.  
+
+🚨 Spoiler alert! Want more hints? ️️⬇️ Scroll down to line 50 🚨
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setInterval and setTimeout are both web APIs. To use them, you therefore need to "step outside" of React and interact with an external (to React) system that produces side effects. In React, there is a standard thing to do whenever you need to "step outside" of React for this reason. 
+
+🚨 Spoiler alert! Want more hints? ️️⬇️ Scroll down to line 100 🚨
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+You need to use React.useEffect(). For more information, see the Beta Reacts Docs:
+
+    https://beta.reactjs.org/learn/synchronizing-with-effects
+ 
+    https://beta.reactjs.org/reference/react/useEffect
+ 
+ Note that the last link has a section with an example that involves a timer: 
+    
+    https://beta.reactjs.org/reference/react/useEffect#connecting-to-an-external-system
+ 
+ However, it will probably make more sense if you read some earlier parts of the doc! 
+
+🚨 Spoiler alert! Want more hints? ️️⬇️ Scroll down to line 150 🚨
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Using setInterval or setTimeout, you need to decrement timeLeft by 1 every second. In pseudocode, this would look like the following: 
+
+     initial timeLeft = 60 
+     
+     1 second -> timeLeft - 1   // timeLeft now = 59
+     1 second -> timeLeft - 1   // timeLeft now = 58
+     1 second -> timeLeft - 1   // timeLeft now = 57
+     etc. 
+                    
+In vanilla JS, this would be straightforward. You could just write something like: 
+
+    let timeLeft = 60
+    
+    setInterval(()=> {
+        timeLeft = timeLeft - 1
+     }, 1000)
+     
+But in React, there are some added complications. For starters, timeLeft is a state value, so if you wrote the above code, you'd be directly mutating state. You need to update state by using setTimeLeft instead. 
+
+Furthermore, setInterval and setTimeout are web APIs (see previous hints), so you need to use them inside of React.useEffect(). 
+
+Finally, you need to think about what dependency or dependencies useEffect should receive, so it knows when to run and what value(s) to use. See the links in the previous hint — particularly this section: https://beta.reactjs.org/reference/react/useEffect#specifying-reactive-dependencies
+ 

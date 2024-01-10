@@ -1,0 +1,26 @@
+Prevent empty-string comments from getting posted. 
+
+Stylistically differentiate the current user's comments from the other users' comments. 
+        
+Make the app more accessible and/or responsive. 
+
+Add a poll the user can take about the debate subject. 
+
+Add an additional post for another debate. 
+
+Add the ability to create threaded responses. 
+
+Create a replica of a log-in system and get rid of the manual username input. 
+
+Integrate an API from OpenAI and/or use it to generate content: https://openai.com/api/
+
+Enter your own comment in the array, so you can share your thoughts when you share your project! 
+    
+    
+    
+    
+    
+    
+    
+    
+    

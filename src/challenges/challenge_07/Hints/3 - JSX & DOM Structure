@@ -1,0 +1,82 @@
+🚨 SPOILER ALERT!🚨
+
+⬇️ Scroll down to line 50 to reveal this hint ⬇️  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+If you were to open this site in a normal browser and inspect it in dev tools, you would see the following structure for the body of the page: 
+
+<body>
+  <header>
+    <div class="button-container">
+      <button>Our Menu</button>
+      <button>About</button>
+      <button>Hours &amp; Location</button>
+    </div>
+  </header>
+  <main>
+    <h1 class="logo-container">Simple Food Restaurant</h1>
+    <p class="info-container">We make simple food for simple people. Want a sandwich? You got it.
+      A hot dog? Coming right up. Poached salmon eggs with fire-roasted asparagus fritters hand-glazed in locally-sourced artisanal honey? Get out of here. Try the Fancy Food Cafe across the street.</p>
+    <div class="image-container">
+      <div class="image-wrapper">
+        <img class="hot-dog" src="images/hotdogs.jpg">
+      </div>
+      <div class="image-wrapper">
+        <img src="images/sandwich.jpg">
+      </div>
+      <div class="image-wrapper">
+        <img src="images/hamburger.jpg">
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>
+      Made by <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Cheeky Coding Company</a>â„¢.
+    </p>
+  </footer>
+
+</body>

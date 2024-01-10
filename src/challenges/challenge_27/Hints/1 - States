@@ -1,0 +1,3 @@
+To find the missing states, take a close look at the useEffect and see which states it is depending on! 
+
+Also, think about what kind of values these two states would need to have in order to be able to turn things "on" and "off. What type of value has an either-or, binary nature and can be very useful when writing and running conditional statements? 

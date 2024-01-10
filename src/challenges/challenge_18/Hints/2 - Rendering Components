@@ -1,0 +1,67 @@
+Remember that components (and arrays of components) can be stored in variables, which can then be part of the return value of the component that is getting rendered to the page. 
+
+🚨 Spolier alert: Want another hint? ⬇️ Scroll down to line 50. 🚨 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+In other words, you can do something analogous to this: 
+
+function App() {
+    
+    const paragraphElements = [<p>Example 1</p>, <p>Example 2</p>, <p>Example 3</p>]
+    
+    return (
+        <div>
+            {paragraphElements}  
+        </div> 
+    )
+}
+
+
+Note: paragraphElements is a JS variable, so we need curly brackets to exit JSX and go back to JS for a moment.
+
+Another note: if you copied this solution verbatim, you would receive an error message stating 'Each child in a list should have a unique "key" prop.' This is another issue you will have to deal with, which is covered in another hint. 
+

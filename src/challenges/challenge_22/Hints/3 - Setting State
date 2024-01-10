@@ -1,0 +1,8 @@
+For each file the user selects, you'll need to create an object that will end up as one of the objects in the filesToUpload state array. Whenever you have a situation like this:
+
+        [item1, item2, item3]   -------------------------->   [newItem1, newItem2, newItem3]
+            initial array             want to produce.....     new array based on initial array
+            
+It's the perfect time for the map method. 
+            
+*However*, when you get the information about the files, it won't be in an array. It'll be in a type of object called a FileList (https://developer.mozilla.org/en-US/docs/Web/API/FileList), which you will have to convert to an array before you can do the above! 

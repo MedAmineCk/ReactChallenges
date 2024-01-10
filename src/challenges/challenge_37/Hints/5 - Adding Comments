@@ -1,0 +1,52 @@
+Ask yourself: where are the current comments coming from? What would need to happen for a new comment to appear in the comment thread? Where would that new comment need to go? And how could the form get that comment there? 
+
+🚨 Spoiler alert! Want more hints? ️️⬇️ Scroll down to line 50 🚨
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+If the user fills out the form and clicks "send," the data collected from it should be pushed to the comments array as a single object that also contains one additional piece of information. 
+
+To figure out what that additional piece of information is, look at the already existing comments in the postData comments array and see if your comment is missing anything. 

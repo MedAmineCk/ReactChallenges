@@ -1,0 +1,19 @@
+    Make the app responsive and/or accessible. 
+    
+    Change the design. 
+    
+    Allow the user to toggle between the days. 
+    
+    Display all three days at once. 
+         
+    Make the app more realistic: 
+    
+        - Handle additional weather conditions: cloudy, windy, stormy, etc. 
+                
+        - Use a free weather API (see Resources). 
+        
+        - Display the current temperature. 
+
+        - These would override some of the original objectives; that's fine!
+    
+    Keep the logic, but change the theme (for example, make it a daily reminder app).

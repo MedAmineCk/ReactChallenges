@@ -1,0 +1,1 @@
+Each "pixel" div should be listening for whether the mouse cursor enter it. Each of them needs an onMouseEnter event handler.  

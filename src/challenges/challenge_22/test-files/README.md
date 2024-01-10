@@ -1,0 +1,3 @@
+These are five files containing images converted to very small sizes. Four of them are in formats the uploader is supposed to support (pdf, jpg, jpeg, and png). One of them is in a format it's not supposed to support (tiff), so the user should not be able to select it. 
+
+You may download the files by downloading this whole project by clicking on the gear icon in the bottom-right corner of the screen and selecting "download as zip". 

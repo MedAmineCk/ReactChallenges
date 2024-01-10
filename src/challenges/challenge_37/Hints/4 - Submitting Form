@@ -1,0 +1,50 @@
+You'll need to add an onSubmit prop to the form itself (rather than the submit button). This should be set to a function that handles the submission of the form. You will need to set up this function yourself. 
+
+Remember the default behavior of a form and what you need to do to prevent it from happening. 
+
+🚨 Spoiler alert! Want more hints? ️️⬇️ Scroll down to line 50 🚨
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The default behavior is to refresh the page. The event object automatically gets passed into the function attached to onSubmit, so you just need to call preventDefault() on that object. 

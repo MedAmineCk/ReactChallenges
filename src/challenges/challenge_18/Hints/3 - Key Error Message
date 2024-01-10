@@ -1,0 +1,3 @@
+In React, every component or element in a list needs a unique key. To learn about how to generate and use keys, read: https://beta.reactjs.org/learn/rendering-lists#where-to-get-your-key. 
+
+You might also want to take a close look at the objects in the diaryData array! Each one has something in it that could be quite useful to you! 

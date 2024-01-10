@@ -1,0 +1,3 @@
+Can you make the way you pass the props to the DiaryCard components more concise than the way they were passed in the original hardcoded components? 
+
+Note: depending on how you do this, you may need to adjust the way props are received in the DiaryCard.jsx file in the components folder. However, there is one way of making it super concise that doesn't require any adjustments at all!

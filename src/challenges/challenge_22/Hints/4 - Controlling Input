@@ -1,0 +1,3 @@
+If you're wondering how to control the file input, the answer is: you can't! File inputs must be uncontrolled. 
+
+See: https://legacy.reactjs.org/docs/uncontrolled-components.html#the-file-input-tag

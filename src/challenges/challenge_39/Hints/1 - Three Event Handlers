@@ -1,0 +1,3 @@
+Remember that you can use a single event handler to listen for an event that happens anywhere inside a document or a particular container and then get information about the target of the event via event.target. You can then use that information to update the state you need to update. 
+
+Since there are only three types of events to handle (mouse button going down, computer key going down, and computer key going up), there only need to be three event handlers, and they can all be added to the "main" div container, since the events will all happen somewhere inside of there. 

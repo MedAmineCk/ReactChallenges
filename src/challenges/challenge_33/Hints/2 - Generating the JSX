@@ -1,0 +1,52 @@
+After organizing the data (see hint 1), you should end up with an array of the bands you need in the order in which you need them. From there, you just need to iterate through it and generate one paragraph per band. There is an array method that's especially suited for such a task!
+
+🚨 Spoiler alert! ️️Want another hint? ⬇️ Scroll down to line 50 to get one — but consider thinking through this on your own a bit more first! 🚨
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hint hint, nudge nudge: 🗺 
+
+(That's a map, in case it isn't clear!)

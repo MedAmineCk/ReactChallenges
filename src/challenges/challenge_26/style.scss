@@ -1,0 +1,235 @@
+.challenge_26 {
+  margin: 0;
+  font-family: 'Courier Prime', Courier New, Courier New, Courier, monospace;
+  background: #508CA4;
+  display: flex;
+  justify-content: center;
+  color: black;
+  scroll-behavior: smooth;
+
+  .wrapper {
+    width: 400px;
+    min-height: 100vh;
+    position: relative;
+    background: #edede9;
+  }
+
+  header {
+    height: 100px;
+    position: sticky;
+    top: -1px;
+    background: #d6ccc2;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 33px;
+  }
+
+  .header-top-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #522A27;
+  }
+
+  h3 {
+    margin: 0 0 10px 0;
+    font-size: 21px;
+    color: #161B33
+  }
+
+  .header-top-container img {
+    height: 21px;
+    margin-right: 8px;
+    transform: translateY(-3px);
+    filter: invert(18%) sepia(4%) saturate(4461%) hue-rotate(316deg) brightness(82%) contrast(104%);
+  }
+
+  .header-bottom-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-button-container {
+    display: flex;
+    width: 300px;
+  }
+
+  header button {
+    padding: 10px;
+    width: 50px;
+    text-align: end;
+    border: none;
+    background: none;
+    background-repeat: no-repeat;
+    background-position: 30% 50%;
+  }
+
+  .favorites {
+    background-image: url(./images/icons/heart-solid.svg);
+    background-size: 17px;
+    background-position: 33% 50%;
+  }
+
+  .archived {
+    background-image: url(./images/icons/box-archive-solid.svg);
+    background-size: 16px;
+  }
+
+  .trash {
+    background-image: url(./images/icons/trash-can-solid.svg);
+    background-size: 14px;
+  }
+
+  .search-container {
+    display: flex;
+    width: 250px;
+    margin-right: 15px;
+    height: 25px;
+    background: #dee2e6;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+
+  .search-container img {
+    height: 50%;
+    align-self: center;
+    padding-left: 10px;
+  }
+
+  .search-container input {
+    height: 100%;
+    width: 80%;
+    margin-left: -20px;
+    padding-left: 30px;
+    border: none;
+    background: none;
+
+  }
+
+  .search-container input:focus {
+    outline: none;
+  }
+
+  .article-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid gray;
+  }
+
+  .article-container img {
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .article-text-container {
+    overflow: hidden;
+    transition: all linear .5s
+  }
+
+  .read-more-button {
+    width: 200px !important;
+    margin: 10px;
+    color: #508CA4
+  }
+
+  .expanded {
+    min-height: 300px;
+    max-height: 800px;
+    overflow: scroll;
+  }
+
+  .minimized {
+    min-height: 47px;
+    max-height: 47px;
+  }
+
+  .article-buttons-container {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    padding: 0 5px;
+  }
+
+  .article-container button {
+    height: 25px;
+    width: 25px;
+    background-repeat: no-repeat !important;
+    background-position: 50% 50%;
+    border: none;
+    background: none;
+  }
+
+  .article-container button:hover {
+    opacity: .6
+  }
+
+  .article-container .add-to-favorites-button {
+    background-image: url("./images/icons/heart-regular.svg")
+  }
+
+  .article-container .add-to-favorites-button.favorited {
+    background-image: url("./images/icons/heart-solid.svg");
+
+    filter: invert(19%) sepia(81%) saturate(1414%) hue-rotate(322deg) brightness(91%) contrast(95%);
+  }
+
+  .article-container .add-to-favorites-button:hover {
+    background-image: url("./images/icons/heart-solid.svg");
+  }
+
+  .article-container .add-to-archive-button {
+    background-image: url("./images/icons/box-archive-solid.svg")
+  }
+
+  .article-container .add-to-trash-button {
+    background-image: url("./images/icons/trash-can-solid.svg")
+  }
+
+  .article-container button:hover {
+    cursor: pointer
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  a:hover {
+    color: #4a4e69
+  }
+
+  p {
+    font-size: 16px;
+    text-align: start;
+    margin: 10px 0 0 10px;
+    padding: 0 20px;
+    line-height: 20px;
+  }
+
+  p.no-articles-message {
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  button:focus {
+    outline: 1px solid black;
+  }
+
+  button:focus:not(:focus-visible) {
+    outline: 0;
+  }
+}

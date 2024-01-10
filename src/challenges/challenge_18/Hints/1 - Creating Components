@@ -1,0 +1,175 @@
+You have an array of data to work with, and you need to generate components for each item in that array. In other words, you want to not only iterate through the array, but produce a bunch of new things corresponding to and based on each thing in the original array. What's a standard way of doing something like that? 
+
+🚨 Spoiler alert: Want another hint? ⬇️ Scroll down to line 50. 🚨 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Use the map method! 
+
+🚨 Spoiler alert: Want another hint? ⬇️ Scroll down to line 100. 🚨 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Remember that the map method creates a new array where every value reflects the return value of the callback function you pass inside of the method. You can model your return value on the existing hardcoded components, replacing the hardcoded data with data from the current element of the array that the map method is iterating through. 
+
+🚨 Spoiler alert: Want another hint? ⬇️ Scroll down to line 150. 🚨 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+If you feel unsure of how to do this, it may help to keep one of the hardcoded DiaryCard components in its original position and replace the hardcoded data with data imported directly from the array.
+
+Here's a somewhat analogous example: 
+
+    const peopleArray = [{name: "Daniel"}, {name: "Sarah"}, {name: "David"}, {name: "Samantha"}]
+    
+    return (
+        <p>Hello, Daniel!</p> 
+    )
+      
+      
+You could change ⬆️ that to this ⬇️
+
+    const peopleArray = [{name: "Daniel"}, {name: "Sarah"}, {name: "David"}, {name: "Samantha"}]
+    
+    return (
+        <p>Hello, {peopleArray[0].name}!</p> 
+    )
+    
+And then you could use the second version of the paragraph element as a model for how to map over the array and create paragraphs for each object in the array. 
+
+    const peopleArray = [{name: "Daniel"}, {name: "Sarah"}, {name: "David"}, {name: "Samantha"}]
+
+    peopleArray.map(person => <p> Hello, {person.name} </p>)
+
+Note: the analogy isn't exact! In this example, you're inserting content into elements, whereas in the challenge, you're inserting props into a component. You'll need to adjust what you do accordingly. 

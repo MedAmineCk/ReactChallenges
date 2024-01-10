@@ -1,0 +1,3 @@
+It isn't React-specific, but the MDN page on file inputs gives a good rundown of all the attribute options: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file
+
+Just remember that in React, an <input /> is a self-closing tag. 

@@ -1,0 +1,3 @@
+The React documentation I have in mind here is this page: https://react.dev/learn/updating-arrays-in-state
+
+Pay particular attention to the parts that talk about "mutating" state or state "mutation" (search for those words). 

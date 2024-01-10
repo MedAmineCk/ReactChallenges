@@ -1,0 +1,3 @@
+Take a look at the header HTML string. Part of your task here is to essentially "translate" this HTML into JSX. On the surface, HTML and JSX are pretty similar, so there are only some small tweaks you have to make. 
+
+You have to make a similar "translation" for the elements getting created and inserted into the DOM via DOM methods. It may help to picture these elements as HTML first and then "translate" them. 

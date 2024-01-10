@@ -1,0 +1,60 @@
+🚨 Spoiler alert! This whole hint gives a lot away, so consider thinking this through and/or Googling more before looking at it. To see it, ⬇️ ️Scroll down to line 50 🚨
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+There are three things you'll need to add for each of the three form elements (the text input, textarea, and checkbox): 
+
+    - onChange
+    - name
+    - value (for the text input and textarea) or checked (for the checkbox)
+    
+onChange should be set to a function that will handle any changes in the form. You will need to set up this function yourself. 
+
+Name should be a word that distinguishes one form element from another and relates to the data being entered inside of it (e.g., "userName").
+
+Value or checked will need to be set up in a certain way to make this a controlled form. This topic is covered in other hints. When you're just starting out with your code, it may be helpful to leave these props out of your form elements and come back to them later. 

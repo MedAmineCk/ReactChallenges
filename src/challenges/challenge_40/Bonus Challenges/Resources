@@ -1,0 +1,5 @@
+An article about building a custom hook to improve how setInterval works with React: https://overreacted.io/making-setinterval-declarative-with-react-hooks/
+
+An article about using useReducer to improve how setInterval works with React: https://overreacted.io/a-complete-guide-to-useeffect/
+
+These are also great articles to read just for the sake of deepening your understanding of the relevant concepts and learning how to "think in React" better. They're both written by Dan Abramov, one of the main engineers behind React. 

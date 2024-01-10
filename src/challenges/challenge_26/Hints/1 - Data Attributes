@@ -1,0 +1,7 @@
+To access the data in the buttons' data attributes, remember two things: 
+
+    1. These attributes live inside the target.dataset property of the event object that will 
+       automatically get passed as an argument into the onClick event handler that you create.
+    
+    2. Hyphen-separated items in a data attribute name get converted into camelCase (e.g., 
+       data-some-name="example" would be accessed via event.target.dataset.someName). 

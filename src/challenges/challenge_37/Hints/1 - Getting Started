@@ -1,0 +1,10 @@
+Don't try to do everything at once! Start small and simple, and work your way up to the final product incrementally. 
+
+For example, you could begin by just aiming to console.log the current data from any of the three form elements whenever the user changes their input in one of them. If you can just figure out how to do that, you're already well on your way to the finish line! 
+
+Then ask yourself: What do I need to do with this data? And what do I need to have in place in order to do that? (If you get stuck on this, there are some other hints in the explorer sidebar that can help you.)
+
+It may also help to have a big picture understanding of how the comments section currently works. Look at the array of comments in the postData file and review the raw ingredients out of which every comment is made. It may help to manually create (or just imagine adding) a new comment to the array to get a feel for what content needs to be added and in what format it needs to be added. 
+
+Then take a look at the general path the data takes to get from the postData file to being rendered on the page. You *don't* have to worry about the details of this (e.g., what happens after the data gets passed to the PostComments or PostContent components). You just need a general understanding of what is going on within the DebatePost component that you're working on. 
+

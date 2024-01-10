@@ -1,0 +1,3 @@
+Notice how the time is initially being set: const [time, setTime] = React.useState(getTime)
+
+To set a new time, you therefore just need to pass the getTime function into setTime. The return value of the getTime function is the value that the app expects to be set as the state called "time." 

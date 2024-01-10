@@ -1,0 +1,1 @@
+Remember that React code can be made modular or composable by putting elements inside components. These components can then be organized into separate files, which can be imported and exported as desired. 

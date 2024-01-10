@@ -1,0 +1,267 @@
+@import "config";
+
+.app-container{
+  display: flex;
+}
+
+nav{
+  width: 300px;
+  height: 100vh;
+  background: #11101D;
+  padding: 20px;
+  display: grid;
+  grid-template-rows: 100px 60px 40px 1fr 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+
+  .scrimba-logo{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+    svg{
+      max-width: 100%;
+    }
+  }
+  
+  .search-input{
+    background: #222135;
+    border-radius: 4px;
+    display: flex;
+    width: 100%;
+    $height: 45px;
+    height: $height;
+    overflow: hidden;
+
+    .icon-container{
+      height: $height;
+      width: $height;
+      padding: 8px;
+      margin-right: 10px;
+      svg{
+        max-width: 100%;
+        opacity: 0.6;
+      }
+    }
+
+    input{
+      border: none;
+      width: 100%;
+      height: 100%;
+      outline: none;
+      background: transparent;
+      color: #fff;
+    }
+  }
+
+  .sort-container{
+    height: 60px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    .hr{
+      width: 100%;
+      height: 2px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .title{
+        background: #11101D;
+        width: fit-content;
+        color: #fff;
+        padding: 0 10px;
+      }
+    }
+  }
+
+  .challenges-nav-container{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-top: 20px;
+    .challenge-item{
+      display: flex;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 10px;
+      height: 45px;
+      border-radius: 4px;
+      text-decoration: none;
+      padding: 4px;
+      color: #fff;
+
+      &.active{
+        background: #EAE9FC;
+        color: #000;
+        font-weight: bold;
+
+        .index-container {
+          background: #222135;
+          color: #fff;
+        }
+      }
+
+      &:hover{
+        background: #222135;
+        color: #fff;
+        font-weight: bold;
+        .index-container {
+          background: #222135;
+          color: #fff;
+          border: 1px solid #000;
+        }
+      }
+
+      .index-container{
+        $size: 40px;
+        width: $size;
+        min-width: $size;
+        height: 100%;
+        border-radius: 4px;
+        background: #EAE9FC;
+        color: #000;
+      }
+
+      p{
+        margin-left: 10px;
+      }
+    }
+    p.no-challenges{
+      text-align: center;
+      color: #fff;
+    }
+  }
+
+  .profile-item{
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.8);
+    background: #11101D;
+    
+    &:before{
+      content: '';
+      display: block;
+      width: 100%;
+      height: 80px;
+      background: #11101d;
+      background: linear-gradient(180deg, rgba(17, 16, 29, 0.00) 0%, #11101D 100%);
+      position: absolute;
+      left: 0;
+      bottom: 70px;
+    }
+
+    .profile{
+      $size: 45px;
+      width: $size;
+      height: $size;
+      border-radius: $size;
+      overflow: hidden;
+      margin-right: 10px;
+
+      img{
+        width: 100%;
+      }
+    }
+    .content{
+      p{
+        font-size: 20px;
+      }
+      a{
+        color: #2bff00;
+        text-decoration: none;
+      }
+    }
+  }
+  
+}
+
+.challenge-container{
+  width: 100%;
+  max-width: calc(100vw - 300px);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.homePage{
+  width: 100%;
+  height: 100vh;
+  background-image: url("./assets/backgroundPattern.svg");
+  background-size: cover;
+  text-align: center;
+  padding-top: 80px;
+
+  h1{
+    color: #000;
+    text-shadow: 5px 5px 0 #FFF;
+    font-size: 96px;
+    font-weight: 900;
+    margin-bottom: 80px;
+  }
+
+  main{
+    display: flex;
+    max-width: 800px;
+    margin: 80px auto;
+    justify-content: space-between;
+
+    .danielProfile{
+      max-width: 140px;
+
+      img{
+        max-width: 100%;
+      }
+    }
+
+    .content{
+      text-align: left;
+      font-size: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content:  center;
+      .title{
+        font-size: 38px;
+        margin-bottom: 20px;
+        span{
+          font-weight: bold;
+        }
+      }
+    }
+
+    .level-icon{
+      display: flex;
+      align-items: center;
+      .container{
+        display: flex;
+        gap: 10px;
+        align-items: flex-end;
+      }
+
+      .bar{
+        width: 20px;
+        height: 100px;
+        border-radius: 20px;
+        background: #000;
+
+        &:nth-child(1){
+          height: 40px;
+        }
+        &:nth-child(2){
+          height: 60px;
+        }
+        &:nth-child(3){
+          background: transparent;
+          border: 4px solid #000;
+        }
+      }
+    }
+  }
+
+  p{
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 24px;
+  }
+}
+

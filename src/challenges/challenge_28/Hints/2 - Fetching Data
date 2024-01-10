@@ -1,0 +1,8 @@
+Remember that when you're fetching from an API when a page loads, you should execute the fetch in useEffect. 
+
+You can use an array method to iterate through savedActivityKeys and fetch data for each key. 
+
+You then need to convert that data from JSON to a JavaScript object, which can then be added to the activitiesData state array. 
+
+You could add the objects to the state array one at a time, as soon as each one is ready, or all at the same time, as soon as they are all ready. Choose whichever approach you prefer. 
+

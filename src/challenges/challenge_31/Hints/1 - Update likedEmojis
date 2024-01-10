@@ -1,0 +1,1 @@
+You have access to the emoji inside the button via event.target.textContent. To update the likedEmojis state array, you just need to stick the emoji on the end of a copy of the current state. 

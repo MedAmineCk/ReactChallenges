@@ -1,0 +1,3 @@
+Does the page keep restarting whenever you click "send"? Check out the hints at "4 - Submitting Form". 
+
+Do you keep getting an error message about how each child in a list should have a unique "key" prop?Compare the data of the comments you are adding to comments array with the data of the comments already in the array. What do they have that your comments are missing?

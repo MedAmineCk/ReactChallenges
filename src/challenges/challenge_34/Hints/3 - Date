@@ -1,0 +1,1 @@
+Don't overthink this. You just need to get the date by writing new Date() and then convert that toLocaleString. 

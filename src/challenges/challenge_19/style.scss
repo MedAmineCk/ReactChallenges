@@ -1,0 +1,297 @@
+.challenge_19 {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: #9EA3B0;
+  color: #090C02;
+  font-family: Arial, Helvetica, sans-serif;
+
+
+  .wrapper {
+    background: #3d5a80;
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+
+  header {
+    padding: 20px;
+    background: #3d5a80;
+    border: none;
+  }
+
+  h1, h2 {
+    margin: 0;
+  }
+
+  h1 {
+    color: #D88C9A;
+    font-size: 34px
+  }
+
+  h2 {
+    margin-top: 5px;
+    font-size: 18px;
+    text-align: center;
+    color: #98c1d9;
+  }
+
+  header div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .header-icon-container {
+    background: black;;
+    height: 15px;
+    width: 15px;
+  }
+
+  .header-icon {
+    height: 28px;
+    filter: invert(83%) sepia(10%) saturate(1174%) hue-rotate(170deg) brightness(93%) contrast(81%);
+  }
+
+  .to-do-list-container {
+    padding: 10px 0 20px 0;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    background: #98c1d9;
+    height: 350px;
+    width: 300px;
+    position: relative;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .to-do-list-item-container {
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    margin-bottom: 20px;
+  }
+
+  input {
+    margin-right: 5px;
+    border-radius: 10px;
+  }
+
+  .new-item-label {
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    margin-top: 5px;
+  }
+
+  .new-item-input {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background: none;
+    margin-left: 5px;
+    margin-right: 20px;
+    font-size: 16px;
+    border: none;
+    resize: none;
+    vertical-align: center;
+  }
+
+  .new-item-input:hover {
+    cursor: text;
+  }
+
+  .new-item-input:focus {
+    cursor: text;
+    background: #EEEEEE83;
+    outline: none;
+  }
+
+  .add-item-icon {
+    height: 25px;
+  }
+
+  .add-item-icon:hover {
+    cursor: pointer;
+    filter: invert(69%) sepia(20%) saturate(755%) hue-rotate(300deg) brightness(88%) contrast(92%);
+  }
+
+  .faded {
+    opacity: 0.2
+  }
+
+  .checkbox-label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 16px;
+    user-select: none;
+    width: 100%;
+  }
+
+  .checkbox-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  .checkmark {
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    margin: auto 0;
+    left: -12px;
+    height: 25px;
+    width: 25px;
+    background-color: #E1E2EF;
+    border: solid gray 1px;
+    border-radius: 4px;
+    transform: translateY(-1px)
+  }
+
+  .checkmark:hover {
+    background-color: #D88C9A;
+  }
+
+  .checkbox-label input:checked ~ .checkmark {
+    background-color: black;
+  }
+
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .checkbox-label input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  .checkbox-label .checkmark:after {
+    left: 0.4rem;
+    top: 0.2rem;
+    width: 6px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+
+  .to-do-list-item-text {
+    margin-left: 25px;
+  }
+
+  .crossed-out {
+    text-decoration: line-through
+  }
+
+  .all-progress-bars-container {
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    padding-right: 20px;
+  }
+
+  .progress-bar-container {
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    border: 1px solid black;
+    height: 2em;
+  }
+
+  .progress-bar-content {
+    height: 100%;
+    animation: progress-animation 2s linear both
+  }
+
+  .bottom-bar-container {
+    display: flex;
+    height: 50px;
+    width: 75%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+    background: #3d5a80;
+  }
+
+  .bottom-bar-container div {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-left: 5px;
+  }
+
+  .icon {
+    height: 40%;
+  }
+
+  .icon:hover {
+    cursor: pointer;
+    filter: invert(78%) sepia(46%) saturate(284%) hue-rotate(172deg) brightness(88%) contrast(91%);
+  }
+
+  .do-it-button-container {
+    display: flex;
+    padding: 20px;
+    margin-top: -1px;
+    justify-content: center;
+    background: #98c1d9;
+    border: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  button {
+    position: relative;
+    padding: 1.3em;
+    border: none;
+    background: #D88C9A;
+    color: #E1E2EF;
+    font-weight: 800;
+    transition: 0.2s;
+    font-size: 14px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    box-shadow: #3d5a80 0px 7px 2px, #000 0px 8px 5px;
+  }
+
+  button:hover {
+    filter: brightness(1.1);
+    cursor: pointer;
+  }
+
+  button:active {
+    top: 4px;
+    box-shadow: #3d5a80 0px 3px 2px, #000 0px 3px 5px;
+  }
+
+  button:focus:not(:focus-visible) {
+    outline: 0;
+  }
+
+  @keyframes progress-animation {
+    0% {
+      width: 0%;
+      background: #D88C9A;
+    }
+
+    100% {
+      width: 100%;
+      background: #D88C9A
+    }
+  }
+}

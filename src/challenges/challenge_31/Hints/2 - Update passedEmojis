@@ -1,0 +1,7 @@
+You have access to all three of the current emojis via the currentEmojis state.
+
+You have access to which emoji the user selected via event.target.textContent. 
+
+From these two pieces of information, you can also determine the two emojis that the user *didn't* select. 
+
+You then just need to stick them onto the end of a copy of the current passedEmojis state array to update the state. 

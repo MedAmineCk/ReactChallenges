@@ -1,0 +1,1 @@
+Consider starting off by just rendering a single Enemy element onto the page, instead of worrying about all three of them. This will simplify the task and give you a better idea of what you need to do to "scale up" your code to encompass all three enemies.  

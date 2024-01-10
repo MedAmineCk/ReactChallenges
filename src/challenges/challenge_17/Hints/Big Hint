@@ -1,0 +1,45 @@
+To complete this challenge, you need to detect and handle four different types of events in the divs listed in the instructions. 
+
+There's an event that you're probably very used to detecting in an element: onClick. The ways you detect and handle the four types of events for this challenge are analogous to what you do with onClick. 
+
+If you're not sure what the events are and/or how to access them, just think about what you're trying to do in plain English (e.g., "detect if cursor..." etc.) and Google it! 
+
+Keep in mind that many answers will be for vanilla JavaScript and you may need to make adjustments for them to work with React (or just make your search more precise!). 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

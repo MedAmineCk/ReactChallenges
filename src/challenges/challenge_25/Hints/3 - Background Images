@@ -1,0 +1,1 @@
+This will require inserting a bit of JS into the existing JSX to change the relevant className, which will entail some special syntax. 

@@ -1,0 +1,61 @@
+If you're having trouble understanding the logic of how the function is supposed to work and/or want some examples, Scroll down to line 50 (spoiler alert!). 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+If Pookachu is facing right, then you might need to update his xPosition if his current xPosition is below the boundaries.xAxis.max value. If it is below the max value, then you would increase the xPosition by +1 (or in other words, you would make the new value of pookachu.xPosition be the previous value plus 1). Otherwise, the xPosition should stay the same, since Pookachu is already at the maximum value he can be on the x-axis. Either way, the yPosition and the other properties of the pookachu state object (direction and wantsToMove) should be preserved. 
+
+For the other three directions Pookachu could be facing, the logic is much the same, with the following adjustments: 
+
+    - If he is facing left, then you would decrease Pookachu's xPosition by -1 if and only if his 
+      current xPosition is above the boundaries.xAxis.max value.
+
+    - If he is facing down, then you would increase his yPosition by +1 if and only if his current 
+      yPosition is below the boundaries.yAxis.max value.
+
+    - If he is facing up, then you would decrease his yPosition by -1 if and only if his current 
+      yPosition is above the boundaries.yAxis.min value.      

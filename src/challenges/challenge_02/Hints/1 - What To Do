@@ -1,0 +1,101 @@
+There are three things you need to do to complete this challenge. Figuring out what they are is one of the main difficulties to surmount here, so give yourself some time to think about it. Then, if you're still stuck, scroll down to line 50 for another hint (spoiler alert!). 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+These are the three tasks: 
+
+    1. Set up a new state or a property in the existing flashCard state that reflects whether 
+       or not the user wants to flip the card.
+    
+    2. Create an onClick event handler that updates this state. 
+    
+    3. Use conditional logic to apply or not apply the "flipped" class to the div based on the 
+       current state value. 
+       
+       
+Still stuck? Scroll down to line 100 for another hint (spoiler alert)! 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Since there are only two ways the card can be (flipped or not flipped), you can make the state a boolean value, and the event handler can flip this value back and forth. With your conditional logic, you then just need to check if the current state value is true or false and apply or not apply the "flipped" class accordingly. 

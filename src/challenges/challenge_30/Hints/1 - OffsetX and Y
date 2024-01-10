@@ -1,0 +1,154 @@
+First off, Google how to do this if you haven't already! This is what I had to do myself to figure out how to find these values! Then, if you're still stuck, scroll down to line 50 for more hints.
+
+
+🚨 Spoiler alert! Want more hints? ️️⬇️ Scroll down to line 50 🚨
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+When you Google this, you might end up on a reference page like:
+
+     https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/offsetX 
+     
+     or 
+     
+     https://www.w3schools.com/jsref/event_offsetx.asp
+     
+The instructions you find here are geared toward vanilla JS. They won't work in React. There is something you have to do a little different in React. 
+
+Google this! If you've already done that and are still stuck, scroll down to line 100 for more hints.
+
+
+🚨 Spoiler alert! Want more hints? ️️⬇️ Scroll down to line 100 🚨
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Read the React documentation on events (https://reactjs.org/docs/events.html), paying special attention to the concepts of SyntheticEvent and the nativeEvent attribute!
+
+If you're still stuck, scroll down to line 150 for one last hint!
+
+🚨 Spoiler alert! Want more hints? ️️⬇️ Scroll down to line 150 🚨
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+In React, events are wrapped in SyntheticEvent. To get the offsetX and offsetY data, you will need to access them from the event's nativeEvent property, instead of directly from the event itself, as you would do in vanilla JS. 
+
+Again, this is all discussed in the React documentation: https://reactjs.org/docs/events.html
+
+You can also read about it in this Stack Overflow post: https://stackoverflow.com/questions/31519758/reacts-mouseevent-doesnt-have-offsetx-offsety

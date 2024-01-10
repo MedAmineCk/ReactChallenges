@@ -1,0 +1,52 @@
+You could do this manually by just writing out three Enemey elements and passing in different props to them corresponding to different objects in the enemiesData array. 
+
+However, there is also an array method that will allow you to take each of the objects and generate an Enemy element for it automatically. 
+
+🚨 Spoiler alert! ️️⬇️ Scroll down to line 50 if you want another hint — but consider trying to figure this out on your own more first! 🚨
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hint hint, nudge nudge: 🗺 
+
+(That's a map, in case it isn't clear!)

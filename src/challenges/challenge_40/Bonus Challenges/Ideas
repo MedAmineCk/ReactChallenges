@@ -1,0 +1,19 @@
+Add one or more of the following: 
+    - A "game over" / "play again" screen.
+    - A countdown before the game begins (3, 2, 1, go!)
+    - Record and display top scores via localStorage.
+    - Allow user to enter his or her name.
+    - Take away points if user shoots laser and doesn't hit a target.
+    - Allow user to toggle music and sound effects off and on. 
+    - Allow the user the customize how long the game is.
+    - Create different difficulty levels (more ships and/or ships go faster).
+    - Remake the game as a top-down, "shoot 'em up" scroller with a player-controlled spaceship. 
+     
+Other ideas: 
+    - Optimize the timer (see article on setInterval in Resources file).
+    - Change the theme.
+    - Make the app more responsive.
+    - Prevent the laser from continuing to appear if the mouse button is held down. 
+
+    
+    

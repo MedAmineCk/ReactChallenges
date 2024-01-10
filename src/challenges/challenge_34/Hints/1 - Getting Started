@@ -1,0 +1,2 @@
+Getting the location info is the trickiest part of this challenge. It's also the first thing that should happen in the chain of events triggered by the user clicking the button. I would therefore suggest starting with this task and building up your code from there. 
+

@@ -1,0 +1,13 @@
+If the mouse cursor enters one of the pixel divs, the following pseudocode should be implemented: 
+
+    If the user's mouse button is down (i.e., is mouseDown true), then do the following: 
+        
+        - Take the previous array of pixel data objects (the pixel state array) and create a new, 
+           updated array of pixel data objects. 
+           
+        - If the pixel data object is the one that corresponds to the pixel div that the mouse 
+          cursor entered, then set its filled value to true or false depending on whether wantsToDraw is true or false. Preserve the ID. 
+          
+        - If the pixel data object does not correspond to that div, preserve all of its data. 
+        
+        - Make this new array of pixel objects the new pixels state. 

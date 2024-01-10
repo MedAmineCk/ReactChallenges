@@ -1,0 +1,11 @@
+Make the app more responsive and/or accessible. 
+
+Change the design or theme. 
+
+Create a UI to allow the user to create new diary entries. 
+
+Allow the user to save entries as "highlights" and see them all in one place by clicking on the "highlights" button. 
+
+Replace the page-scrolling mechanism for getting from one section to another with a more realistic mechanism (separate pages or conditionally rendered components). 
+
+Create more diary entries and continue the story (just for fun)! 

@@ -1,0 +1,57 @@
+There are a number of array methods that can help you do this. Figuring out which ones to use is a big part of this challenge, so give yourself some time to think about it and do some Googling if need be. Then, if you're still stuck, scroll down to line 50 for another hint (spoiler alert).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+There are probably multiple ways of accomplishing this, but the way I did it was as follows: 
+
+    - use .filter to narrow down the sonnetsData array to just the sonnets we want to render.
+    
+    - use .join to combine all of a sonnet's lines into a single string inside of .filter's 
+      callback method..
+      
+    - use .includes to see if that string includes the search term. 
